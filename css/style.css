@@ -1,0 +1,163 @@
+body{
+	font-family: 'Source Sans Pro', sans-serif;
+}
+
+.text-center{
+    width: 100px;
+}
+
+.nav-item img{
+    width: 150px;
+}
+
+.cgcrlogo{
+    height: 100px;
+    width: 100px;
+}
+
+.cgcrotate img{ animation: coranaround 3s linear infinite}
+
+@keyframes coranaround{ 
+	0% { transform: rotate(0); }
+	100% { transform: rotate(360deg); }
+ }
+
+.navbar .collapse .navbar-nav .nav-item .nav-link{
+	font-size: 18px;
+	color: white;
+}
+footer .fab:hover{
+    font-size: 40px;
+}
+.navbar .collapse .navbar-nav .nav-item .nav-link:hover{
+  font-size: 19px;
+}
+
+ .eksath{
+     text-align: center;
+ }
+ .eksath img{
+     max-height: 90px;
+     margin-top: 10px;
+     margin-bottom: 20px;
+ }
+
+
+ .eksath img{ animation: heartbeat 5s linear infinite}
+
+@keyframes heartbeat
+{
+  0%
+  {
+    transform: scale( .75 );
+  }
+  20%
+  {
+    transform: scale( 1 );
+  }
+  40%
+  {
+    transform: scale( .75 );
+  }
+  60%
+  {
+    transform: scale( 1 );
+  }
+  80%
+  {
+    transform: scale( .75 );
+  }
+  100%
+  {
+    transform: scale( .75 );
+  }
+}
+
+.container_total { 
+  align-items: center;
+  margin: 50px 0;
+}
+
+
+
+.infected {
+  border-bottom: 10px solid rgba(0, 0, 255, 0.5);
+}
+
+.recovered{
+  border-bottom: 10px solid rgba(0, 255, 0, 0.5);
+}
+
+.deaths{
+  border-bottom: 10px solid rgba(255, 0, 0, 0.5);
+}
+
+.stats{
+  width: 100%;
+  background-image: linear-gradient(rgba(0,0,0,0.9), rgba(0,0,0,0.9)) ,url('../images/bg.jpg');
+  background-size: cover;
+  color: aliceblue;
+}
+
+
+
+
+
+.footer {
+  margin-top: 30px;
+  padding: 2px 0;
+  color:white;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  text-align: center;
+}
+
+.hide{
+  display: none;
+}
+.fadeIn{
+  animation: fade 0.5s ease-in-out;
+}
+@keyframes fade{
+  0%{
+      opacity: 0;
+  }
+  100%{
+      opacity: 1;
+  }
+}
+
+
+.name{
+  font-size: 2.2em;
+  color: #be64f1;
+  font-weight: bold;
+  
+}
+
+.state{
+  margin-bottom: 20px;
+}
+
+@media screen and (max-width: 400px) {
+  #state-data{
+    font-size: 0.5rem;
+  }
+  .name{
+    font-size: 1.2em;
+  }
+
+  #ddstate{
+    width: 300px;
+  }
+
+  option{
+    width: 250px;
+  }
+  
+}
+
+#aboutsite{
+  color: aliceblue;
+}
